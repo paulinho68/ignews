@@ -32,8 +32,8 @@ Neste desafio foi usado as seguintes dependências:
     - `npm run dev` OR `yarn dev`
 5. visitar a página http://localhost:3000/ no seu browser.
 
-![Application](https:raw.//github.com/paulinho68/ignews/master/asstes/Screenshot_1.png)
+![Application](https://raw.githubusercontent.com/paulinho68/ignews/master/assets/Screenshot_1.png)
 
-![Application](https:raw.//github.com/paulinho68/ignews/master/asstes/Screenshot_2.png)
+![Application](https://raw.githubusercontent.com/paulinho68/ignews/master/assets/Screenshot_2.png)
 
-![Application](https:raw.//github.com/paulinho68/ignews/master/asstes/Screenshot_3.png)
+![Application](https://raw.githubusercontent.com/paulinho68/ignews/master/assets/Screenshot_3.png)
