@@ -45,16 +45,21 @@ export default function Posts({ posts }: PostsProps) {
 
 export const getStaticProps: GetStaticProps = async () => {
     const prismic = getPrismicClient();
+    let response = { results: [] };
+    try {
+        response = await prismic.query(
+            [
+                Prismic.predicates.at('document.type', 'posts')
+            ],
+            {
+                fetch: ['posts.title', 'posts.content'],
+                pageSize: 100
+            }
+        )
 
-    const response = await prismic.query(
-        [
-            Prismic.predicates.at('document.type', 'posts')
-        ],
-        {
-            fetch: ['posts.title', 'posts.content'],
-            pageSize: 100
-        }
-    )
+    } catch (error) {
+        console.log(error)
+    }
 
     const posts = response.results.map(post => {
         return {
