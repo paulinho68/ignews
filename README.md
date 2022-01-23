@@ -23,6 +23,8 @@ Neste desafio foi usado as seguintes dependências:
 - Prismic-dom
 - React-Icons
 - Axios
+- Jest
+- Identity-obj-proxy
 
 ## Como testar o Ignews?
 1. clonar este projeto em sua máquina local.
